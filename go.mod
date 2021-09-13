@@ -10,4 +10,5 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.4
 	github.com/russross/blackfriday/v2 v2.0.1
 	github.com/urfave/cli/v2 v2.3.0
+	honnef.co/go/tools v0.2.1 // indirect
 )
