@@ -9,7 +9,7 @@ title: drone-docker
 [![Source: GitHub](https://img.shields.io/badge/source-github-blue.svg?logo=github&logoColor=white)](https://github.com/thegeeklab/drone-matrix)
 [![License: MIT](https://img.shields.io/github/license/thegeeklab/drone-matrix)](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE)
 
-Drone plugin to add comments to GitHub Issues and Pull Requests.
+Drone plugin to to send messages to a Matrix room.
 
 <!-- prettier-ignore-start -->
 <!-- spellchecker-disable -->

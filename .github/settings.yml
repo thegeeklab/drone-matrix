@@ -1,6 +1,6 @@
 repository:
   name: drone-matrix
-  description: Drone plugin to add comments to GitHub Issues and Pull Requests
+  description: Drone plugin to to send messages to Matrix
   homepage: https://drone-plugin-index.geekdocs.de/plugins/drone-matrix
   topics: drone, drone-plugin
 
