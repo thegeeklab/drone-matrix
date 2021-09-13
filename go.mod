@@ -1,6 +1,6 @@
 module github.com/drone-plugins/drone-matrix
 
-go 1.15
+go 1.16
 
 require (
 	github.com/drone-plugins/drone-plugin-lib v0.4.0
