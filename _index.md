@@ -1,5 +1,5 @@
 ---
-title: drone-docker
+title: drone-matrix
 ---
 
 [![Build Status](https://img.shields.io/drone/build/thegeeklab/drone-matrix?logo=drone&server=https%3A%2F%2Fdrone.thegeeklab.de)](https://drone.thegeeklab.de/thegeeklab/drone-matrix)
