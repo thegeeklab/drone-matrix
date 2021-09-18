@@ -10,6 +10,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/drone/drone-template-lib/template"
 	"github.com/matrix-org/gomatrix"
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/russross/blackfriday/v2"
@@ -61,7 +62,7 @@ func (p *Plugin) Execute() error {
 		return fmt.Errorf("failed to join room: %w", err)
 	}
 
-	message, err := RenderTrim(p.settings.Template, p)
+	message, err := template.RenderTrim(p.settings.Template, p)
 
 	if err != nil {
 		return fmt.Errorf("failed to render template: %w", err)
