@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/drone/drone-template-lib/template"
 	"github.com/matrix-org/gomatrix"
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/russross/blackfriday/v2"
+	"github.com/thegeeklab/drone-template-lib/v2/template"
 )
 
 // Settings for the plugin.
