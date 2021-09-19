@@ -45,7 +45,7 @@ docker run --rm \
   -e PLUGIN_PASSWORD=p455w0rd \
   -v $(pwd):$(pwd) \
   -w $(pwd) \
-  plugins/matrix
+  thegeeklab/drone-matrix
 ```
 
 ### Parameters
