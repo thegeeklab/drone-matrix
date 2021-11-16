@@ -8,7 +8,7 @@ Drone plugin to to send messages to Matrix
 [![Go Report Card](https://goreportcard.com/badge/github.com/thegeeklab/drone-matrix)](https://goreportcard.com/report/github.com/thegeeklab/drone-matrix)
 [![GitHub contributors](https://img.shields.io/github/contributors/thegeeklab/drone-matrix)](https://github.com/thegeeklab/drone-matrix/graphs/contributors)
 [![Source: GitHub](https://img.shields.io/badge/source-github-blue.svg?logo=github&logoColor=white)](https://github.com/thegeeklab/drone-matrix)
-[![License: MIT](https://img.shields.io/github/license/thegeeklab/drone-matrix)](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE)
+[![License: Apache-2.0](https://img.shields.io/github/license/thegeeklab/drone-matrix)](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE)
 
 Drone plugin to to send messages to a Matrix room. You can find the full documentation at You can find the full documentation at [https://drone-plugin-index.geekdocs.de](https://drone-plugin-index.geekdocs.de/plugins/drone-matrix).
 
@@ -19,4 +19,4 @@ please see the [instructions](https://github.com/thegeeklab/drone-matrix/blob/ma
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE) file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE) file for details.
