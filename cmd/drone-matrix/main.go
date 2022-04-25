@@ -7,6 +7,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/drone-plugins/drone-matrix/plugin"
@@ -16,19 +17,26 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-var version = "unknown"
+var (
+	BuildVersion = "devel"
+	BuildDate    = "00000000"
+)
 
 func main() {
 	settings := &plugin.Settings{}
 
 	if _, err := os.Stat("/run/drone/env"); err == nil {
-		godotenv.Overload("/run/drone/env")
+		_ = godotenv.Overload("/run/drone/env")
+	}
+
+	cli.VersionPrinter = func(c *cli.Context) {
+		fmt.Printf("%s version=%s date=%s\n", c.App.Name, c.App.Version, BuildDate)
 	}
 
 	app := &cli.App{
 		Name:    "drone-matrix",
 		Usage:   "build notifications for matrix",
-		Version: version,
+		Version: BuildVersion,
 		Flags:   append(settingsFlags(settings), urfave.Flags()...),
 		Action:  run(settings),
 	}
