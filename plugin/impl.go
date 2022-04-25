@@ -36,7 +36,6 @@ func (p *Plugin) Validate() error {
 // Execute provides the implementation of the plugin.
 func (p *Plugin) Execute() error {
 	m, err := gomatrix.NewClient(p.settings.Homeserver, prepend("@", p.settings.UserID), p.settings.AccessToken)
-
 	if err != nil {
 		return fmt.Errorf("failed to initialize client: %w", err)
 	}
@@ -48,7 +47,6 @@ func (p *Plugin) Execute() error {
 			Password:                 p.settings.Password,
 			InitialDeviceDisplayName: "Drone",
 		})
-
 		if err != nil {
 			return fmt.Errorf("failed to authenticate user: %w", err)
 		}
@@ -57,13 +55,11 @@ func (p *Plugin) Execute() error {
 	}
 
 	joined, err := m.JoinRoom(prepend("!", p.settings.RoomID), "", nil)
-
 	if err != nil {
 		return fmt.Errorf("failed to join room: %w", err)
 	}
 
 	message, err := template.RenderTrim(p.settings.Template, p.pipeline)
-
 	if err != nil {
 		return fmt.Errorf("failed to render template: %w", err)
 	}
