@@ -9,7 +9,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.18
 	github.com/russross/blackfriday/v2 v2.1.0
 	github.com/thegeeklab/drone-template-lib/v2 v2.1.0
-	github.com/urfave/cli/v2 v2.4.0
+	github.com/urfave/cli/v2 v2.4.8
 )
 
 require (
