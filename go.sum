@@ -63,8 +63,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.5.1 h1:nOGnQDM7FYENwehXlg/kFVnos3rEvtKTjRvOWSzb6H4=
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
-github.com/thegeeklab/drone-template-lib/v2 v2.1.0 h1:Q6a/PzQmEpe/zQtNai7MqLSzuuKtMamK1GY7gtUvpHg=
-github.com/thegeeklab/drone-template-lib/v2 v2.1.0/go.mod h1:4dsE1uzuQcNHiHOlzgarh5LyfX0Hyzw7dps41CmJYAA=
+github.com/thegeeklab/drone-template-lib/v2 v2.1.1 h1:K/h7OAKycScck6jOfvN/HiiblNdd6vRpijY9B9SXVAo=
+github.com/thegeeklab/drone-template-lib/v2 v2.1.1/go.mod h1:oFWxD3XBVmPGOl/Rz0qXVih61kQDxjoc/O+RCNikJr0=
 github.com/urfave/cli/v2 v2.2.0/go.mod h1:SE9GqnLQmjVa0iPEY0f1w3ygNIYcIJ0OKPMoW2caLfQ=
 github.com/urfave/cli/v2 v2.4.8 h1:9HuvvddU3oEJr1tJlwUVVsk3snVWMuKSpyAO+SzTNuI=
 github.com/urfave/cli/v2 v2.4.8/go.mod h1:oDzoM7pVwz6wHn5ogWgFUU1s4VJayeQS+aEZDqXIEJs=
