@@ -11,9 +11,9 @@ import (
 	"os"
 
 	"github.com/drone-plugins/drone-matrix/plugin"
-	"github.com/drone-plugins/drone-plugin-lib/errors"
-	"github.com/drone-plugins/drone-plugin-lib/urfave"
 	"github.com/joho/godotenv"
+	"github.com/thegeeklab/drone-plugin-lib/errors"
+	"github.com/thegeeklab/drone-plugin-lib/urfave"
 	"github.com/urfave/cli/v2"
 )
 
