@@ -9,13 +9,14 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0
 	github.com/thegeeklab/drone-plugin-lib v1.0.0
 	github.com/thegeeklab/drone-template-lib/v2 v2.1.1
-	github.com/urfave/cli/v2 v2.5.1
+	github.com/urfave/cli/v2 v2.7.1
 )
 
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/Masterminds/sprig/v3 v3.2.2 // indirect
+	github.com/antzucaro/matchr v0.0.0-20210222213004-b04723ef80f0 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/flowchartsman/handlebars/v3 v3.0.1 // indirect
