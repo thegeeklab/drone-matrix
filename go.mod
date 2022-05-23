@@ -9,7 +9,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0
 	github.com/thegeeklab/drone-plugin-lib v1.0.0
 	github.com/thegeeklab/drone-template-lib/v2 v2.1.1
-	github.com/urfave/cli/v2 v2.7.1
+	github.com/urfave/cli/v2 v2.8.0
 )
 
 require (
