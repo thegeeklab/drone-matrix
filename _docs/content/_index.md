@@ -41,8 +41,6 @@ steps:
 <!-- spellchecker-enable -->
 <!-- prettier-ignore-end -->
 
-### Examples
-
 ## Build
 
 Build the binary with the following command:
