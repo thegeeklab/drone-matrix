@@ -86,7 +86,7 @@ func (p *Plugin) Execute() error {
 	if _, err := client.SendMessageEvent(joined.RoomID, event.EventMessage, content); err != nil {
 		return fmt.Errorf("failed to submit message: %w", err)
 	}
-	logrus.Info("message sent")
+	logrus.Info("message sent successfully")
 
 	return nil
 }
