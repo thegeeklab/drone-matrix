@@ -1,0 +1,38 @@
+---
+properties:
+  username:
+    description: The authentication username. If set, password is required as well.
+    type: string
+    required: false
+
+  password:
+    description: The authentication password.
+    type: string
+    required: false
+
+  user_id:
+    description: The authentication user uid. If set, access token is required as well.
+    type: string
+    required: false
+
+  access_token:
+    description: The authentication access token.
+    type: string
+    required: false
+
+  homeserver:
+    description: The Matrix homeserver url to use.
+    defaultValue: https://matrix.org
+    type: string
+    required: false
+
+  roomid:
+    description: The Room ID to send messages to.
+    type: string
+    required: false
+
+  template:
+    description: Golang Template for the messages.
+    defaultValue: build {{ build.status }} [{{ repo.owner }}/{{ repo.name }}#{{ truncate build.commit 8 }}]({{ build.link }}) ({{ build.branch }}) by {{ build.author }}
+    type: string
+    required: false

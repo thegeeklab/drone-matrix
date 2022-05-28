@@ -17,6 +17,32 @@ Drone plugin to to send messages to a Matrix room.
 <!-- spellchecker-enable -->
 <!-- prettier-ignore-end -->
 
+## Usage
+
+```YAML
+kind: pipeline
+name: default
+
+steps:
+- name: notify
+  image: thegeeklab/matrix
+  settings:
+    homeserver: https://matrix.org
+    roomid: abcdefghijklmnopqrstuvwxyz:matrix.org
+    username: octocat
+    password: secret
+```
+
+### Parameters
+
+<!-- prettier-ignore-start -->
+<!-- spellchecker-disable -->
+{{< propertylist name=drone-matrix.data >}}
+<!-- spellchecker-enable -->
+<!-- prettier-ignore-end -->
+
+### Examples
+
 ## Build
 
 Build the binary with the following command:
@@ -36,7 +62,7 @@ Build the Docker image with the following command:
 docker build --file docker/Dockerfile.amd64 --tag thegeeklab/drone-matrix .
 ```
 
-## Usage
+## Test
 
 ```Shell
 docker run --rm \
@@ -47,26 +73,3 @@ docker run --rm \
   -w $(pwd) \
   thegeeklab/drone-matrix
 ```
-
-### Parameters
-
-username
-: sets username for authentication
-
-password
-: sets password for authentication
-
-user_id
-: sets userid for authentication
-
-access_token
-: sets access token for authentication
-
-homeserver
-: sets matrix home server url to use (default `https://matrix.org`)
-
-roomid
-: sets roomid to send messages to
-
-template
-: sets message template; used default template `build {{ build.status }} [{{ repo.owner }}/{{ repo.name }}#{{ truncate build.commit 8 }}]({{ build.link }}) ({{ build.branch }}) by {{ build.author }}`
