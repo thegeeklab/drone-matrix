@@ -13,7 +13,11 @@ import (
 	"github.com/matrix-org/gomatrix"
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/russross/blackfriday/v2"
+	"github.com/sirupsen/logrus"
 	"github.com/thegeeklab/drone-template-lib/v2/template"
+	"maunium.net/go/mautrix"
+	"maunium.net/go/mautrix/event"
+	"maunium.net/go/mautrix/id"
 )
 
 // Settings for the plugin.
@@ -29,32 +33,36 @@ type Settings struct {
 
 // Validate handles the settings validation of the plugin.
 func (p *Plugin) Validate() error {
-	// Currently there's no validation
+	if (p.settings.Username == "" || p.settings.Password == "") && (p.settings.UserID == "" || p.settings.AccessToken == "") {
+		return fmt.Errorf("either username and password or userid and accesstoken are required")
+	}
+
 	return nil
 }
 
 // Execute provides the implementation of the plugin.
 func (p *Plugin) Execute() error {
-	m, err := gomatrix.NewClient(p.settings.Homeserver, prepend("@", p.settings.UserID), p.settings.AccessToken)
+	muid := id.NewUserID(prepend("@", p.settings.UserID), p.settings.Homeserver)
+	client, err := mautrix.NewClient(p.settings.Homeserver, muid, p.settings.AccessToken)
 	if err != nil {
 		return fmt.Errorf("failed to initialize client: %w", err)
 	}
 
 	if p.settings.UserID == "" || p.settings.AccessToken == "" {
-		r, err := m.Login(&gomatrix.ReqLogin{
+		_, err := client.Login(&mautrix.ReqLogin{
 			Type:                     "m.login.password",
-			User:                     p.settings.Username,
+			Identifier:               mautrix.UserIdentifier{Type: mautrix.IdentifierTypeUser, User: p.settings.Username},
 			Password:                 p.settings.Password,
 			InitialDeviceDisplayName: "Drone",
+			StoreCredentials:         true,
 		})
 		if err != nil {
 			return fmt.Errorf("failed to authenticate user: %w", err)
 		}
-
-		m.SetCredentials(r.UserID, r.AccessToken)
 	}
+	logrus.Info("successfully logged in")
 
-	joined, err := m.JoinRoom(prepend("!", p.settings.RoomID), "", nil)
+	joined, err := client.JoinRoom(prepend("!", p.settings.RoomID), "", nil)
 	if err != nil {
 		return fmt.Errorf("failed to join room: %w", err)
 	}
@@ -75,9 +83,10 @@ func (p *Plugin) Execute() error {
 		FormattedBody: string(formatted),
 	}
 
-	if _, err := m.SendMessageEvent(joined.RoomID, "m.room.message", content); err != nil {
+	if _, err := client.SendMessageEvent(joined.RoomID, event.EventMessage, content); err != nil {
 		return fmt.Errorf("failed to submit message: %w", err)
 	}
+	logrus.Info("message sent successfully")
 
 	return nil
 }
