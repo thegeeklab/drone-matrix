@@ -50,6 +50,7 @@ func settingsFlags(settings *plugin.Settings) []cli.Flag {
 			EnvVars:     []string{"PLUGIN_ROOMID", "MATRIX_ROOMID"},
 			Usage:       "sets roomid to send messages to",
 			Destination: &settings.RoomID,
+			Required:    true,
 		},
 		&cli.StringFlag{
 			Name:        "template",
