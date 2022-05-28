@@ -12,31 +12,35 @@ import (
 )
 
 // settingsFlags has the cli.Flags for the plugin.Settings.
-func settingsFlags(settings *plugin.Settings) []cli.Flag {
+func settingsFlags(settings *plugin.Settings, category string) []cli.Flag {
 	return []cli.Flag{
 		&cli.StringFlag{
 			Name:        "username",
 			EnvVars:     []string{"PLUGIN_USERNAME", "MATRIX_USERNAME"},
 			Usage:       "sets username for authentication",
 			Destination: &settings.Username,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "password",
 			EnvVars:     []string{"PLUGIN_PASSWORD", "MATRIX_PASSWORD"},
 			Usage:       "sets password for authentication",
 			Destination: &settings.Password,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "userid",
 			EnvVars:     []string{"PLUGIN_USERID,PLUGIN_USER_ID", "MATRIX_USERID", "MATRIX_USER_ID"},
 			Usage:       "sets userid for authentication",
 			Destination: &settings.UserID,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "accesstoken",
 			EnvVars:     []string{"PLUGIN_ACCESSTOKEN,PLUGIN_ACCESS_TOKEN", "MATRIX_ACCESSTOKEN", "MATRIX_ACCESS_TOKEN"},
 			Usage:       "sets access token for authentication",
 			Destination: &settings.AccessToken,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "homeserver",
@@ -44,12 +48,14 @@ func settingsFlags(settings *plugin.Settings) []cli.Flag {
 			Usage:       "sets matrix home server url to use",
 			Value:       "https://matrix.org",
 			Destination: &settings.Homeserver,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "roomid",
 			EnvVars:     []string{"PLUGIN_ROOMID", "MATRIX_ROOMID"},
 			Usage:       "sets roomid to send messages to",
 			Destination: &settings.RoomID,
+			Category:    category,
 		},
 		&cli.StringFlag{
 			Name:        "template",
@@ -57,6 +63,7 @@ func settingsFlags(settings *plugin.Settings) []cli.Flag {
 			Usage:       "sets message template",
 			Value:       "Build {{ build.Status }} [{{ repo.Owner }}/{{ repo.Name }}#{{ truncate commit.SHA 8 }}]({{ build.Link }}) ({{ build.Branch }}) by {{ commit.Author }}",
 			Destination: &settings.Template,
+			Category:    category,
 		},
 	}
 }
