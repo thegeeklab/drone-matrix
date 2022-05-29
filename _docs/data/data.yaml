@@ -1,22 +1,22 @@
 ---
 properties:
   username:
-    description: The authentication username. If set, password is required as well.
+    description: Authentication username. If set, the `password` parameter is required as well.
     type: string
     required: false
 
   password:
-    description: The authentication password.
+    description: Authentication password.
     type: string
     required: false
 
   user_id:
-    description: The authentication user uid. If set, access token is required as well.
+    description: Aauthentication User ID. If set, the `access_token` parameter is required as well.
     type: string
     required: false
 
   access_token:
-    description: The authentication access token.
+    description: Authentication access token.
     type: string
     required: false
 
@@ -27,12 +27,12 @@ properties:
     required: false
 
   roomid:
-    description: The Room ID to send messages to.
+    description: Room ID to send messages to.
     type: string
     required: false
 
   template:
-    description: Golang Template for the messages.
+    description: Golang template for the messages.
     defaultValue: build {{ build.status }} [{{ repo.owner }}/{{ repo.name }}#{{ truncate build.commit 8 }}]({{ build.link }}) ({{ build.branch }}) by {{ build.author }}
     type: string
     required: false
