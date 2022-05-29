@@ -13,7 +13,7 @@ import (
 	"github.com/drone-plugins/drone-matrix/plugin"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
-	"github.com/thegeeklab/drone-plugin-lib/urfave"
+	"github.com/thegeeklab/drone-plugin-lib/v2/urfave"
 	"github.com/urfave/cli/v2"
 )
 
@@ -37,7 +37,7 @@ func main() {
 		Name:    "drone-matrix",
 		Usage:   "build notifications for matrix",
 		Version: BuildVersion,
-		Flags:   append(settingsFlags(settings, "Plugin Flags"), urfave.Flags()...),
+		Flags:   append(settingsFlags(settings, urfave.FlagsPluginCategory), urfave.Flags()...),
 		Action:  run(settings),
 	}
 
