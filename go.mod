@@ -8,7 +8,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.18
 	github.com/russross/blackfriday/v2 v2.1.0
 	github.com/sirupsen/logrus v1.8.1
-	github.com/thegeeklab/drone-plugin-lib/v2 v2.0.0
+	github.com/thegeeklab/drone-plugin-lib/v2 v2.0.1
 	github.com/thegeeklab/drone-template-lib/v2 v2.1.1
 	github.com/urfave/cli/v2 v2.10.1
 	maunium.net/go/mautrix v0.11.0
