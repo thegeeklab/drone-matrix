@@ -10,7 +10,7 @@ require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/thegeeklab/drone-plugin-lib/v2 v2.0.1
 	github.com/thegeeklab/drone-template-lib/v2 v2.1.1
-	github.com/urfave/cli/v2 v2.10.1
+	github.com/urfave/cli/v2 v2.11.0
 	maunium.net/go/mautrix v0.11.0
 )
 
