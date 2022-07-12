@@ -14,7 +14,7 @@ Drone plugin to to send messages to a Matrix room. You can find the full documen
 
 ## Contributors
 
-Special thanks goes to all [contributors](https://github.com/thegeeklab/drone-matrix/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/thegeeklab/drone-matrix/blob/main/CONTRIBUTING.md).
+Special thanks to all [contributors](https://github.com/thegeeklab/drone-matrix/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/thegeeklab/drone-matrix/blob/main/CONTRIBUTING.md).
 
 ## License
 
