@@ -10,7 +10,7 @@ Drone plugin to to send messages to Matrix
 [![Source: GitHub](https://img.shields.io/badge/source-github-blue.svg?logo=github&logoColor=white)](https://github.com/thegeeklab/drone-matrix)
 [![License: Apache-2.0](https://img.shields.io/github/license/thegeeklab/drone-matrix)](https://github.com/thegeeklab/drone-matrix/blob/main/LICENSE)
 
-Drone plugin to to send messages to a Matrix room. You can find the full documentation at You can find the full documentation at [https://drone-plugin-index.geekdocs.de](https://drone-plugin-index.geekdocs.de/plugins/drone-matrix).
+Drone plugin to to send messages to a Matrix room. You can find the full documentation at [https://drone-plugin-index.geekdocs.de](https://drone-plugin-index.geekdocs.de/plugins/drone-matrix).
 
 ## Contributors
 
