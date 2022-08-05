@@ -55,8 +55,8 @@ github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.1 h1:5TQK59W5E3v0r2duFAb7P95B6hEeOyEnHRa8MjYSMTY=
 github.com/thegeeklab/drone-plugin-lib/v2 v2.0.2 h1:RocBTXE5NuBlE7Toz8Vr/6naS7aPYRf3ZvJCPrAnwBA=
 github.com/thegeeklab/drone-plugin-lib/v2 v2.0.2/go.mod h1:4i9SzCtb+xYx0N5TXoFMpXYdcSwjIAYbmc1jwA0MPME=
-github.com/thegeeklab/drone-template-lib/v2 v2.1.1 h1:K/h7OAKycScck6jOfvN/HiiblNdd6vRpijY9B9SXVAo=
-github.com/thegeeklab/drone-template-lib/v2 v2.1.1/go.mod h1:oFWxD3XBVmPGOl/Rz0qXVih61kQDxjoc/O+RCNikJr0=
+github.com/thegeeklab/drone-template-lib/v2 v2.2.0 h1:lDNGPyXX6s1jiuyngeUTOi1JKJ+tAuyp//pjzG9dEzw=
+github.com/thegeeklab/drone-template-lib/v2 v2.2.0/go.mod h1:2oF8ar9A6yUpp0+jrLalbngDqjQRXl/AnY/F9rBcppY=
 github.com/urfave/cli/v2 v2.11.1 h1:UKK6SP7fV3eKOefbS87iT9YHefv7iB/53ih6e+GNAsE=
 github.com/urfave/cli/v2 v2.11.1/go.mod h1:f8iq5LtQ/bLxafbdBSLPPNsgaW0l/2fYYEHhAyPlwvo=
 github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 h1:bAn7/zixMGCfxrRTfdpNzjtPYqr8smhKouy9mxVdGPU=
