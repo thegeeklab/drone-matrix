@@ -11,7 +11,7 @@ require (
 	github.com/thegeeklab/drone-plugin-lib/v2 v2.1.0
 	github.com/thegeeklab/drone-template-lib/v2 v2.2.0
 	github.com/urfave/cli/v2 v2.11.1
-	maunium.net/go/mautrix v0.11.0
+	maunium.net/go/mautrix v0.12.0
 )
 
 require (
@@ -29,8 +29,12 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
+	github.com/tidwall/gjson v1.14.1 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/tidwall/sjson v1.2.4 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
-	golang.org/x/crypto v0.0.0-20220513210258-46612604a0f9 // indirect
-	golang.org/x/net v0.0.0-20220513224357-95641704303c // indirect
+	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
+	golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e // indirect
 	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
 )
