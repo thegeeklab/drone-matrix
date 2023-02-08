@@ -106,7 +106,7 @@ platform:
 
 steps:
   - name: dryrun
-    image: thegeeklab/drone-docker-buildx:20
+    image: thegeeklab/drone-docker-buildx:23
     settings:
       dockerfile: Dockerfile.multiarch
       dry_run: true
@@ -122,7 +122,7 @@ steps:
         - refs/pull/**
 
   - name: publish-dockerhub
-    image: thegeeklab/drone-docker-buildx:20
+    image: thegeeklab/drone-docker-buildx:23
     settings:
       auto_tag: true
       dockerfile: Dockerfile.multiarch
@@ -145,7 +145,7 @@ steps:
       - dryrun
 
   - name: publish-quay
-    image: thegeeklab/drone-docker-buildx:20
+    image: thegeeklab/drone-docker-buildx:23
     settings:
       auto_tag: true
       dockerfile: Dockerfile.multiarch
@@ -292,6 +292,6 @@ depends_on:
 
 ---
 kind: signature
-hmac: 681842eb341611d9e5a23128a7229465f2d6c993fee780fbae2db42e4a53526d
+hmac: b1a61f7bdf20a71610d4c1bb8f641bdb13503a40413288ff07bf77f51ae0914b
 
 ...
