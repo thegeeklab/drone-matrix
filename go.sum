@@ -52,8 +52,8 @@ github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
-github.com/thegeeklab/drone-plugin-lib/v2 v2.2.1 h1:fta32M+y6aHG/BX+Kwxo9DQAcYpTyCBHn7sAm2qjfL0=
-github.com/thegeeklab/drone-plugin-lib/v2 v2.2.1/go.mod h1:Bu++VS6GXEWCHQdzR65dPsGtBGOMuqAQPiRVBaa+HrY=
+github.com/thegeeklab/drone-plugin-lib/v2 v2.3.1 h1:+tbq9I0XwfK38SOWV3rATPdVt4W/KBXDg1ebmFOjCjw=
+github.com/thegeeklab/drone-plugin-lib/v2 v2.3.1/go.mod h1:NDOZW0eQz7cXeaWeqVS5lzxrUgxrN/TD2KBjS4fMJLk=
 github.com/thegeeklab/drone-template-lib/v2 v2.2.1 h1:+O9S7ahjinxkufHvEb4w5zUT1a7HbyB3PVM68q7aMTs=
 github.com/thegeeklab/drone-template-lib/v2 v2.2.1/go.mod h1:Y33XBbCwwWWumkq0su8b0kKXLl4WRwRpCXS8WVc5REw=
 github.com/tidwall/gjson v1.14.2/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=
