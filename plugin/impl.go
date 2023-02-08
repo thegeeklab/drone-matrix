@@ -15,7 +15,7 @@ import (
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/russross/blackfriday/v2"
 	"github.com/sirupsen/logrus"
-	"github.com/thegeeklab/drone-template-lib/v2/template"
+	"github.com/thegeeklab/drone-plugin-lib/v2/template"
 	"maunium.net/go/mautrix"
 	"maunium.net/go/mautrix/event"
 	"maunium.net/go/mautrix/id"
@@ -73,7 +73,7 @@ func (p *Plugin) Execute() error {
 		return fmt.Errorf("failed to join room: %w", err)
 	}
 
-	message, err := template.RenderTrim(p.settings.Template, p.pipeline)
+	message, err := template.RenderTrim(p.network.Context, *p.network.Client, p.settings.Template, p.pipeline)
 	if err != nil {
 		return fmt.Errorf("failed to render template: %w", err)
 	}
