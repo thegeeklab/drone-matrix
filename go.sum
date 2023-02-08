@@ -11,8 +11,6 @@ github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46t
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/flowchartsman/handlebars/v3 v3.0.1 h1:16YAX2vJ2X2wgliz4QoUNyOJDLmnZ7Uldg/5w49/z3A=
-github.com/flowchartsman/handlebars/v3 v3.0.1/go.mod h1:HGaRKxnZS8F2cteR3rusKeY+lI9fbnqwwesT+A3a18I=
 github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
@@ -52,10 +50,8 @@ github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
-github.com/thegeeklab/drone-plugin-lib/v2 v2.2.1 h1:fta32M+y6aHG/BX+Kwxo9DQAcYpTyCBHn7sAm2qjfL0=
-github.com/thegeeklab/drone-plugin-lib/v2 v2.2.1/go.mod h1:Bu++VS6GXEWCHQdzR65dPsGtBGOMuqAQPiRVBaa+HrY=
-github.com/thegeeklab/drone-template-lib/v2 v2.2.1 h1:+O9S7ahjinxkufHvEb4w5zUT1a7HbyB3PVM68q7aMTs=
-github.com/thegeeklab/drone-template-lib/v2 v2.2.1/go.mod h1:Y33XBbCwwWWumkq0su8b0kKXLl4WRwRpCXS8WVc5REw=
+github.com/thegeeklab/drone-plugin-lib/v2 v2.3.1 h1:+tbq9I0XwfK38SOWV3rATPdVt4W/KBXDg1ebmFOjCjw=
+github.com/thegeeklab/drone-plugin-lib/v2 v2.3.1/go.mod h1:NDOZW0eQz7cXeaWeqVS5lzxrUgxrN/TD2KBjS4fMJLk=
 github.com/tidwall/gjson v1.14.2/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=
 github.com/tidwall/gjson v1.14.4 h1:uo0p8EbA09J7RQaflQ1aBRffTR7xedD2bcIVSYxLnkM=
 github.com/tidwall/gjson v1.14.4/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=
