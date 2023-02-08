@@ -7,6 +7,7 @@
 package plugin
 
 import (
+	"errors"
 	"fmt"
 	"strings"
 
@@ -31,10 +32,13 @@ type Settings struct {
 	Template    string
 }
 
+var ErrAuthSourceNotSet = errors.New("either username and password or userid and accesstoken are required")
+
 // Validate handles the settings validation of the plugin.
 func (p *Plugin) Validate() error {
-	if (p.settings.Username == "" || p.settings.Password == "") && (p.settings.UserID == "" || p.settings.AccessToken == "") {
-		return fmt.Errorf("either username and password or userid and accesstoken are required")
+	if (p.settings.Username == "" || p.settings.Password == "") &&
+		(p.settings.UserID == "" || p.settings.AccessToken == "") {
+		return ErrAuthSourceNotSet
 	}
 
 	return nil
@@ -43,6 +47,7 @@ func (p *Plugin) Validate() error {
 // Execute provides the implementation of the plugin.
 func (p *Plugin) Execute() error {
 	muid := id.NewUserID(prepend("@", p.settings.UserID), p.settings.Homeserver)
+
 	client, err := mautrix.NewClient(p.settings.Homeserver, muid, p.settings.AccessToken)
 	if err != nil {
 		return fmt.Errorf("failed to initialize client: %w", err)
@@ -60,7 +65,8 @@ func (p *Plugin) Execute() error {
 			return fmt.Errorf("failed to authenticate user: %w", err)
 		}
 	}
-	logrus.Info("successfully logged in")
+
+	logrus.Info("logged in successfully")
 
 	joined, err := client.JoinRoom(prepend("!", p.settings.RoomID), "", nil)
 	if err != nil {
@@ -86,19 +92,20 @@ func (p *Plugin) Execute() error {
 	if _, err := client.SendMessageEvent(joined.RoomID, event.EventMessage, content); err != nil {
 		return fmt.Errorf("failed to submit message: %w", err)
 	}
+
 	logrus.Info("message sent successfully")
 
 	return nil
 }
 
-func prepend(prefix, s string) string {
-	if s == "" {
-		return s
+func prepend(prefix, input string) string {
+	if strings.TrimSpace(input) == "" {
+		return input
 	}
 
-	if strings.HasPrefix(s, prefix) {
-		return s
+	if strings.HasPrefix(input, prefix) {
+		return input
 	}
 
-	return prefix + s
+	return prefix + input
 }
