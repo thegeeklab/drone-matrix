@@ -58,9 +58,10 @@ func settingsFlags(settings *plugin.Settings, category string) []cli.Flag {
 			Category:    category,
 		},
 		&cli.StringFlag{
-			Name:        "template",
-			EnvVars:     []string{"PLUGIN_TEMPLATE", "MATRIX_TEMPLATE"},
-			Usage:       "message template",
+			Name:    "template",
+			EnvVars: []string{"PLUGIN_TEMPLATE", "MATRIX_TEMPLATE"},
+			Usage:   "message template",
+			//nolint:lll
 			Value:       "Build {{ build.Status }} [{{ repo.Owner }}/{{ repo.Name }}#{{ truncate commit.SHA 8 }}]({{ build.Link }}) ({{ build.Branch }}) by {{ commit.Author }}",
 			Destination: &settings.Template,
 			Category:    category,
