@@ -32,7 +32,9 @@ properties:
     required: false
 
   - name: template
-    description: Golang template for the messages.
-    defaultValue: build {{ build.status }} [{{ repo.owner }}/{{ repo.name }}#{{ truncate build.commit 8 }}]({{ build.link }}) ({{ build.branch }}) by {{ build.author }}
+    description: |
+      Golang template for the message. The [pipeline struct](https://pkg.go.dev/github.com/thegeeklab/drone-plugin-lib/v2/drone#Pipeline)
+      is exposed to the template and all fields can be referenced. To extend the functionality, [sprig functions](https://masterminds.github.io/sprig/) can also be used.
+    defaultValue: "Build {{ .Build.Status }} [{{ .Repo.Owner }}/{{ .Repo.Name }}#{{ trunc 8 .Commit.SHA }}]({{ .Build.Link }}) ({{ .Build.Branch }}) by {{ .Commit.Author }}"
     type: string
     required: false

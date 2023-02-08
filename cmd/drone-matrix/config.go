@@ -62,7 +62,7 @@ func settingsFlags(settings *plugin.Settings, category string) []cli.Flag {
 			EnvVars: []string{"PLUGIN_TEMPLATE", "MATRIX_TEMPLATE"},
 			Usage:   "message template",
 			//nolint:lll
-			Value:       "Build {{ build.Status }} [{{ repo.Owner }}/{{ repo.Name }}#{{ truncate commit.SHA 8 }}]({{ build.Link }}) ({{ build.Branch }}) by {{ commit.Author }}",
+			Value:       "Build {{ .Build.Status }} [{{ .Repo.Owner }}/{{ .Repo.Name }}#{{ trunc 8 .Commit.SHA }}]({{ .Build.Link }}) ({{ .Build.Branch }}) by {{ .Commit.Author }}",
 			Destination: &settings.Template,
 			Category:    category,
 		},
