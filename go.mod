@@ -10,7 +10,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/thegeeklab/drone-plugin-lib/v2 v2.3.4
 	github.com/urfave/cli/v2 v2.25.5
-	maunium.net/go/mautrix v0.15.3
+	maunium.net/go/mautrix v0.15.4
 )
 
 require (
@@ -36,7 +36,7 @@ require (
 	github.com/tidwall/sjson v1.2.5 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
-	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
+	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
 	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
