@@ -10,7 +10,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/thegeeklab/drone-plugin-lib/v2 v2.3.4
 	github.com/urfave/cli/v2 v2.25.5
-	maunium.net/go/mautrix v0.15.4
+	maunium.net/go/mautrix v0.16.0
 )
 
 require (
@@ -27,18 +27,19 @@ require (
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/rs/zerolog v1.29.1 // indirect
+	github.com/rs/zerolog v1.30.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
-	github.com/tidwall/gjson v1.14.4 // indirect
+	github.com/tidwall/gjson v1.16.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
-	golang.org/x/crypto v0.11.0 // indirect
-	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
-	golang.org/x/net v0.12.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
+	go.mau.fi/util v0.0.0-20230805171708-199bf3eec776 // indirect
+	golang.org/x/crypto v0.12.0 // indirect
+	golang.org/x/exp v0.0.0-20230810033253-352e893a4cad // indirect
+	golang.org/x/net v0.14.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	maunium.net/go/maulogger/v2 v2.4.1 // indirect
 )
